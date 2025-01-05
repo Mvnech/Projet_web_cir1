@@ -1,0 +1,224 @@
+body{
+    background-color:#000000;
+    color:white;
+	text-align:center;
+	font-family:Gotham, Tahoma, sans-serif;
+	height: 100%;
+	margin: 0;
+}
+#head{
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+#logo{
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
+}
+#head p{
+    font-size: 120%;
+    font-style: normal;
+    color: white;
+    margin-left: 5%;
+}
+.bande{
+    display: inline;
+    vertical-align: middle;
+}
+a{text-decoration: none;
+opacity:0.85;}
+a:hover{opacity:1;}
+h1{
+    margin-left: 1%;
+    font-size: 160%;
+    color:#d2b25e ;
+}
+h2,h3,h4{color:#d2b25e;}
+#titre{
+	font-size: 200%;
+    color:#d2b25e ;
+}
+
+/*Partie 'diaporama'*/
+#slideshow {
+	margin-left:35%;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#sContent {
+    display: flex;
+    width: calc(400px * 6);
+    animation: slide 18s infinite;
+}
+#sContent li {
+    list-style: none;
+    flex: 0 0 400px;
+}
+#sContent img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    16.66% { transform: translateX(-400px); }
+    33.33% { transform: translateX(-800px); }
+    50% { transform: translateX(-1200px); }
+    66.66% { transform: translateX(-1600px); }
+    83.33% { transform: translateX(-2000px); }
+}
+#milieu{
+    margin-top: 100px;
+    text-align: center;
+	font-size:140%;
+	margin-left:10px;
+	margin-right:10px;
+}
+.prix{font-weight: bold;}
+.prix a{
+	text-decoration:none;
+color:white;}
+.vote-option {
+    margin: 10px;
+	margin-top:10px;
+    cursor: pointer;
+}
+.vote-option input[type="radio"] {
+    display: none;
+}
+.vote-option img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+	margin-left:30px;
+	margin-right:30px;
+    vertical-align: middle;
+	border-radius: 10px;
+	border: 1px solid #333;
+	/* display: none; */
+}
+.result {
+    cursor: pointer;
+	margin:10px;
+}
+.result {
+    display: flex;
+    gap: 10px; 
+}
+.result img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    vertical-align: middle;
+	margin-left:30px;
+	margin-right:30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    display: none;
+}
+#vote_suivant{
+		margin-top:25px;
+		width: 300px;
+		height: 50px;
+		background-color:#333;
+		color:white;
+		border-radius: 10px;
+		border: 3px double #d2b25e;
+		cursor:pointer;
+		padding: 15px 50px;
+        overflow: hidden;
+        position: relative;
+		margin-left:50%-300px;
+
+}
+#vote_suivant span {
+        position: relative;
+        z-index: 1;
+      }
+#vote_suivant:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 470%;
+        width: 140%;
+        background: #333;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+        transform: translateX(-100%) translateY(-25%) rotate(45deg);
+		  background-color: #d2b25e;
+      }
+#vote_suivant:hover:after {
+        -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        transform: translateX(-9%) translateY(-25%) rotate(45deg);
+		background-color: grey;
+      }
+a{color:white;}
+#vote_suivant:hover {
+  background-color: #d2b25e;
+}
+.categorie {
+    margin: 40px 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.categorie a {
+    color: white;
+    text-decoration: none;
+}
+.categorie h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.images div {
+    text-align: center;
+	font-family:;
+}
+.images img {
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+	margin: 10px 25px 0 0;
+  }
+.images p {
+    margin: 10px 25px 0 0;
+}
+#footer{
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    bottom: -15px;
+    left: 0;
+	padding:1% 0;
+	margin-top:5%;
+}
+
+#footer p{
+    font-size: 130%;
+    font-style: normal;
+    color: white;
+	margin-right:5%;
+	margin-left:1%;
+	color:#d2b25e;
+}
+#footer #copy{
+	font-size: 90%;
+	color:white;
+}

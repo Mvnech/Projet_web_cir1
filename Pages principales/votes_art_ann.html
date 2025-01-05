@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Votes</title>
+    <meta charset="utf-8">
+    <link href="accueil.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="..\ressources\logo\laur.png">
+	<script type="text/javascript" src="vote_art_ann.js"></script>
+</head>
+<body>
+    <div id="head">
+        <a href="accueil.html" class="a"><img src="..\ressources\logo\laur.png" id="logo" class="bande">
+        <h1 class="bande">Les Palmes</h1></a>
+        
+        <a href="categ.html" class="a" class="bande" ><p class="bande" >Catégories</p></a>
+        <a href="votes.html" class="a" class="bande"><p class="bande">Votes</p></a>
+        
+    </div>
+    <div id="milieu">
+		<h2>Vote Artistes de l'année :</h2>
+		<div class="vote">
+				<h2 id="classement"></h2>
+                <label class="vote-option">
+                    <input type="radio" value="option1" onclick="change();">
+                    <img  id="Image1" src="..\\ressources\\categorie\\artiste_de_l'annee\\AyaNakamura\\ayaimg.jpg" onclick="score('Image1');">
+                </label>
+                <label class="vote-option">
+                    <input type="radio" value="option2" onclick="change();">
+                    <img id="Image2" src="..\\ressources\\categorie\\artiste_de_l'annee\\Gazo\\gazoimg.jpg" onclick="score('Image2');">
+				</label>
+			</div>
+			<div class="result">
+				<div>
+                    <img id="Image3" src="">
+				</div><br>
+				<div>
+                    <img id="Image4" src="">
+				</div><br>
+				<div>
+                    <img id="Image5" src="">
+				</div>
+            </div>
+			<a href="votes_cover.html">
+					<button type="button" id="vote_suivant"><span>Passer au vote suivant</span></button>
+				</a>
+    </div>
+	<div id="footer">
+	<a href="accueil.html"><img src="..\ressources\logo\laur.png" id="logo" class="bande">
+        <p class="bande">Accueil</p></a>
+        <a href="categ.html" class="bande" ><p class="bande" >Catégories</p></a>
+        <a href="votes.html" class="bande"><p class="bande">Votes</p></a>
+		<br><a href="https://unctad.org/copyright"><p id="copy">© Copyright 2024 - CIR 1 ISEN Rennes. All rights reserved.</p></a>
+	</div>
+</body>
